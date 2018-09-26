@@ -156,6 +156,14 @@ document.getElementById('inputform').addEventListener('submit', function(e){
   movieSearch();
   tvSearch();
 
+//Alert for invalid entry
+$('#inputform').submit(function() {
+    if($('#search').val() == ''){
+        alert('Blank! Please enter a search query.');
+        return false;
+    }
+});
+
 //Scroll to results after submit
 setTimeout(function(){
   window.scrollTo({
