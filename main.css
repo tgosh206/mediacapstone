@@ -1,0 +1,410 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Dosis', serif;
+  background-image: url("http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSwatches_1920x1234.jpg");
+}
+
+body {
+  padding-top: 10px;
+}
+
+header {
+  text-align: center;
+  height: 100vh;
+  padding: 2px;
+}
+
+main {
+  text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: grey;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 300px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: lightgrey}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display: block;}
+
+
+li {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(10, 165, 212);
+  /* margin-left: -20px; */
+}
+
+li.movie {
+  background-color: rgb(245, 151, 10);
+  /* margin-right: 15px; */
+}
+
+li.tv {
+  background-color: aquamarine;
+}
+
+section.book-content {
+width: 33.33%;
+float: left;
+}
+
+section.movie-content {
+  width: 33.33%;
+  float: right;
+}
+
+section.tv-content {
+  width: 33.33%;
+  float: right;
+}
+
+#book-results {
+  text-align: start;
+  list-style-type: none;
+}
+
+#movie-results {
+  text-align: start;
+  list-style-type: none;
+}
+
+#tv-results {
+  text-align: start;
+  list-style-type: none;
+}
+
+/* section divider */
+hr#black-divider1, hr#black-divider2 {
+  background-color: black;
+  height: 3px!important;
+}
+
+
+img {
+  width: 200px;
+  height: 250px;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1.tagline {
+  margin-top: 200px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-weight: lighter;
+}
+
+h2 {
+  border: 4px solid black;
+  border-radius: 20px;
+  width: 33%;
+  padding: 10px;
+  background: rgb(10, 165, 212);
+  display: inline-block;
+}
+
+h2.movie {
+  background-color: rgb(245, 151, 10);
+}
+
+h2.tv {
+  background-color: aquamarine;
+}
+
+h3 {
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+h4, h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+input#search {
+  border: none;
+  color: red;
+  font-size: 35px;
+  border-bottom: 3px solid rgb(10, 165, 212);
+  margin-right: -4px;
+  background-color: transparent;
+  font-family: 'Dosis', serif;
+}
+
+input#submit {
+  border: 2px solid rgb(10, 165, 212);
+  cursor: pointer;
+  background-color: rgb(10, 165, 212);
+  font-size: 35px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: red;
+}
+
+#back2Top {
+    width: 60px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    color: lightyellow;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    color: red;
+}
+
+/* smartphone responsiveness */
+@media only screen and (max-width: 429px) {
+  section.book-content, section.movie-content, section.tv-content {
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  header {
+    padding: 20px;
+  }
+
+  h1.tagline {
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    /* color: mediumblue; */
+  }
+
+  input#search {
+    border: none;
+    /* font-size: 25px; */
+    background-color: transparent;
+    text-align: center;
+    margin-top: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input::placeholder {
+  color: red;
+  }
+
+  input#submit {
+    cursor: pointer;
+    background-color: rgb(10, 165, 212);
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  input#submit:hover {
+    background-color:red;
+  }
+
+    /* .dropbtn {
+      margin-left: 15px;
+    } */
+
+    .dropdown-content a {
+    padding: 15px 130px;
+    }
+
+  ul {
+  display: inline;
+  justify-content: center;
+  }
+
+  li {
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(10, 165, 212);
+  }
+
+  img {
+    text-align: center;
+    width: 200px;
+    height: 230px;
+  }
+
+  h2 {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    background: rgb(10, 165, 212);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  h2.movie {
+    background-color: rgb(245, 151, 10);
+  }
+
+  h2.tv {
+    background-color: aquamarine;
+  }
+
+  h3 {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  h4 {
+  text-align: center;
+  font-size: 15px;
+  }
+
+  h5 {
+  text-align: center;
+  font-size: 15px;
+  }
+
+  #back2Top {
+    font-size: 25px;
+    right: 1px;
+    bottom: 10px;
+  }
+}
+
+  /* tablets  */
+  @media only screen and (min-width: 430px) and (max-width: 1024px) {
+    h1.tagline {
+      margin-top: 225px;
+      font-size: 80px;
+      font-weight: lighter;
+    }
+
+    input#search, input#submit {
+      font-size: 50px;
+    }
+
+    .dropbtn {
+      font-size: 30px;
+      width: 600px;
+    }
+
+    .dropdown-content a {
+    padding: 25px 278px;
+    }
+
+    hr#black-divider1, hr#black-divider2 {
+      background-color: black;
+      height: 2px!important;
+    }
+
+    ul {
+      display: inline;
+      justify-content: center;
+    }
+
+    section.book-content, section.movie-content, section.tv-content {
+      width: 90%;
+      float: none;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 50px;
+    }
+
+    img {
+      width: 400px;
+      height: 500px;
+    }
+
+    h4 {
+      font-size: 40px;
+    }
+
+    h5 {
+      font-size: 35px;
+    }
+
+    #back2Top {
+      font-size: 50px;
+    }
+  }
+
+  /* desktops */
+  @media only screen and (min-width: 1025px) {
+      hr#black-divider1, hr#black-divider2 {
+      display: none;
+    }
+
+    .dropbtn {
+      display: none;
+    }
+
+    li {
+      margin-left: -20px;
+    }
+
+    li.movie {
+      background-color: rgb(245, 151, 10);
+      margin-right: 20px;
+    }
+  }

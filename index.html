@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Media Search Capstone</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+    <header role="banner" class="search">
+          <h1 class="tagline">Search, compare, and discover three kinds of media all in one place.</h1>
+          <form id="inputform">
+            <input id="search" type="text" placeholder="Search here..." />
+            <input  type="submit" id="submit" value="Submit" />
+          </form>
+            <br>
+          <p>(ex. fiction, horror, Stephen King)</p>
+    </header>
+
+  <body>
+    <main role="main" id="results">
+<!-- Dropdown menu -->
+      <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Scroll To...</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#book-results">Books</a>
+    <a href="#black-divider1">Movies</a>
+    <a href="#black-divider2">TV</a>
+  </div>
+</div>
+<br>
+
+ <!-- Results -->
+      <section class="book-content">
+        <h2 class="books">Books</h2>
+        <ul id="book-results">  
+          </ul>
+      </section>
+    <hr id="black-divider1">
+      <section class="movie-content">
+        <h2 class="movie">Movies</h2>
+        <ul id="movie-results">
+          </ul>
+      </section>
+    <hr id="black-divider2">
+      <section class="tv-content">
+        <h2 class="tv">TV</h2>
+        <ul id="tv-results">
+          </ul>
+        </section>
+
+        <!-- Scroll to top -->
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
