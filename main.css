@@ -60,10 +60,10 @@ main {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: lightgrey}
+    .dropdown-content a:hover {background-color: lightgrey}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display: block;}
+    .show {display: block;}
 
 
 li {
@@ -82,8 +82,8 @@ li.tv {
 }
 
 section.book-content {
-width: 33.33%;
-float: left;
+  width: 33.33%;
+  float: left;
 }
 
 section.movie-content {
@@ -239,14 +239,14 @@ input::placeholder {
   }
 
   input#submit {
-    cursor: pointer;
-    background-color: rgb(10, 165, 212);
-    font-size: 25px;
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
+  cursor: pointer;
+  background-color: rgb(10, 165, 212);
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
   }
 
   input#submit:hover {
@@ -258,14 +258,14 @@ input::placeholder {
     }
 
   ul {
-  display: inline;
-  justify-content: center;
+    display: inline;
+    justify-content: center;
   }
 
   li {
-  border-radius: 10px;
-  padding: 20px;
-  background: rgb(10, 165, 212);
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(10, 165, 212);
   }
 
   img {
@@ -301,13 +301,13 @@ input::placeholder {
   }
 
   h4 {
-  text-align: center;
-  font-size: 15px;
+    text-align: center;
+    font-size: 15px;
   }
 
   h5 {
-  text-align: center;
-  font-size: 15px;
+    text-align: center;
+    font-size: 15px;
   }
 
   #back2Top {
