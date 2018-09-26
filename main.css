@@ -71,12 +71,10 @@ li {
   border-radius: 10px;
   padding: 20px;
   background: rgb(10, 165, 212);
-  /* margin-left: -20px; */
 }
 
 li.movie {
   background-color: rgb(245, 151, 10);
-  /* margin-right: 15px; */
 }
 
 li.tv {
@@ -216,7 +214,6 @@ input::placeholder {
 @media only screen and (max-width: 429px) {
   section.book-content, section.movie-content, section.tv-content {
     width: 100%;
-    /* margin-left: 30px; */
   }
   header {
     padding: 20px;
@@ -226,12 +223,10 @@ input::placeholder {
     margin-top: 200px;
     font-size: 30px;
     font-weight: 700;
-    /* color: mediumblue; */
   }
 
   input#search {
     border: none;
-    /* font-size: 25px; */
     background-color: transparent;
     text-align: center;
     margin-top: none;
@@ -257,10 +252,6 @@ input::placeholder {
   input#submit:hover {
     background-color:red;
   }
-
-    /* .dropbtn {
-      margin-left: 15px;
-    } */
 
     .dropdown-content a {
     padding: 15px 130px;

@@ -1,4 +1,4 @@
-//BOOK SEARCH
+ //BOOK SEARCH
 function bookSearch(){
   console.log('Book Search')
   var search = document.getElementById('search').value
@@ -15,7 +15,7 @@ function bookSearch(){
         return `
             <li>
               <h3>${item.volumeInfo.title}</h3>
-              <img class="book-cover" src="${item.volumeInfo.imageLinks.thumbnail}">
+              <img class="book-cover" src="${item.volumeInfo.imageLinks.thumbnail}" alt="book cover">
               <h4>Author: ${item.volumeInfo.authors}</h4>
               <h4>Published: ${item.volumeInfo.publishedDate}</h4>
               <h5>${item.volumeInfo.description}</h5>
@@ -56,7 +56,7 @@ $.ajax(settings).done(function(response) {
         return `
             <li class="movie">
               <h3>${title}</h3>
-              <img class="movie-poster" src="https://image.tmdb.org/t/p/w200/${result.poster_path}">
+              <img class="movie-poster" src="https://image.tmdb.org/t/p/w200/${result.poster_path}" alt="movie poster">
               <h4>Release Date: ${result.release_date}</h4>
               <h4>Vote Average: ${result.vote_average}</h4>
               <h4>${result.overview}</h5>
@@ -96,7 +96,7 @@ $.ajax(settings).done(function(response) {
         return `
             <li class="tv">
               <h3>${title}</h3>
-              <img class="tv-poster" src="https://image.tmdb.org/t/p/w200/${result.poster_path}">
+              <img class="tv-poster" src="https://image.tmdb.org/t/p/w200/${result.poster_path}" alt="tv poster">
               <h4>First Air Date: ${result.first_air_date}</h4>
               <h4>Vote Average: ${result.vote_average}</h4>
               <h4>${result.overview}</h5>
@@ -149,13 +149,14 @@ $(document).ready(function() {
 });
  /*Scroll to top when arrow clicked END*/
 
-
+//Get results on search
 document.getElementById('inputform').addEventListener('submit', function(e){
   e.preventDefault();
   bookSearch();
   movieSearch();
   tvSearch();
 
+//Scroll to results after submit
 setTimeout(function(){
   window.scrollTo({
     top: 625,
